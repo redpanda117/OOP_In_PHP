@@ -4,11 +4,11 @@
 class Bicycle{
 
 //class properties
-    var $brand;
-    var $model;
-    var $year;
-    var $description = 'Used bicycle';
-    var $weight_kg = 0.0;
+    public $brand;
+    public $model;
+    public $year;
+    public $description = 'Used bicycle';
+    public $weight_kg = 0.0;
 
 //class methods
     function name(){

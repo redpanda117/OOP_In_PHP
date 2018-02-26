@@ -1,10 +1,10 @@
 <?php
 
 class Animal{
-    var $legs;
-    var $weight_lb = 0;
-    var $fur = true;
-    var $pet = true;
+    public $legs;
+    public $weight_lb = 0;
+    public $fur = true;
+    public $pet = true;
 
     function weight_stones(){
         return $this->weight_lb / 14;
@@ -13,13 +13,13 @@ class Animal{
 
 //inherit everything from animals
 class Cat extends Animal{
-    var $legs = 4;
+    public $legs = 4;
 }
 
 class Whale extends Animal{
-    var $legs = 0;
-    var $fur = false;
-    var $pet = false;
+    public $legs = 0;
+    public $fur = false;
+    public $pet = false;
 }
 
 $Max = new Cat;
