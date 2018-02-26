@@ -11,15 +11,15 @@ class Bicycle{
     public $weight_kg = 0.0;
 
 //class methods
-    function name(){
+    public function name(){
         return $this->brand . " " . $this->model . "(" . $this->year . ")";
     }
     
-    function weight_lbs(){
+    public function weight_lbs(){
         return floatval($this->weight_kg) * 2.2046446218;
     }
 
-    function setWeight_lbs($value){
+    public function setWeight_lbs($value){
         $this->weight_kg = floatval($value) / 2.2046446218; 
     }
 }

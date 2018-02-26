@@ -6,7 +6,7 @@ class Animal{
     public $fur = true;
     public $pet = true;
 
-    function weight_stones(){
+    public function weight_stones(){
         return $this->weight_lb / 14;
     }
 }
